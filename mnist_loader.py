@@ -39,7 +39,7 @@ def open_data_url(url, cache_dir=None):
             fo.write(buf.getvalue())
 
         buf.seek(0)
-        return StringIO.StringIO(buf)
+        return buf
 
 def read_data(file_in):
     """
